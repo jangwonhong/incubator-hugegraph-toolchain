@@ -1,0 +1,287 @@
+{
+  "data-analyze": {
+    "category": {
+      "gremlin-analyze": "Gremlin 분석",
+      "algorithm-analyze": "알고리즘 분석"
+    },
+    "manipulations": {
+      "execution": "실행",
+      "favorite": "즐겨찾기",
+      "reset": "초기화"
+    },
+    "algorithm-list": {
+      "title": "알고리즘 목록",
+      "loop-detection": "루프 감지",
+      "focus-detection": "교차점 감지",
+      "shortest-path": "최단 경로",
+      "shortest-path-all": "전체 최단 경로",
+      "all-path": "모든 경로",
+      "neighbor-rank-recommendation": "Neighbor Rank 추천 알고리즘",
+      "model-similarity": "모델 유사도 알고리즘",
+      "real-time-recommendation": "실시간 추천",
+      "k-step-neighbor": "k단계 이웃",
+      "k-hop": "k단계 알고리즘",
+      "custom-path": "사용자 정의 경로",
+      "custom-intersection-detection": "사용자 정의 교차점 감지",
+      "radiographic-inspection": "방사선 검사",
+      "common-neighbor": "공통 이웃",
+      "weighted-shortest-path": "가중 최단 경로",
+      "single-source-weighted-path": "단일 소스 가중 경로",
+      "jaccard-similarity": "자카드 유사도",
+      "personal-rank-recommendation": "Personal Rank 추천 알고리즘"
+    },
+    "algorithm-forms": {
+      "loop-detection": {
+        "options": {
+          "source": "출발점 ID:",
+          "direction": "방향:",
+          "max_depth": "최대 단계 수:",
+          "label": "엣지 유형:",
+          "max_degree": "최대 차수:",
+          "source_in_ring": "루프에 출발점 포함:",
+          "limit": "반환 가능 경로의 최대값:",
+          "capacity": "접근 가능 정점 최대값:"
+        },
+        "pre-value": "모두",
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "no-edge-types": "엣지 유형 없음"
+        },
+        "hint": {
+          "max-depth": "성능을 보장하기 위해 10단계를 넘지 않는 것을 권장하며, 5단계를 추천합니다",
+          "skip-degree": "쿼리 과정에서 건너뛸 정점의 최소 엣지 수를 기입하세요. 즉, 정점의 엣지 수가 슈퍼 버텍스 차수보다 클 때, 해당 정점을 건너뛰어 슈퍼 버텍스를 피할 수 있습니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요"
+        }
+      },
+      "focus-detection": {
+        "options": {
+          "source": "출발점 ID:",
+          "target": "도착점 ID:",
+          "direction": "방향:",
+          "max_depth": "최대 단계 수:",
+          "label": "엣지 유형:",
+          "max_degree": "최대 차수:",
+          "limit": "접근 가능 정점 최대값:",
+          "capacity": "교차점 반환 최대값:"
+        },
+        "pre-value": "모두",
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-target-id": "도착점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "no-edge-types": "엣지 유형 없음"
+        },
+        "hint": {
+          "max-depth": "성능을 보장하기 위해 10단계를 넘지 않는 것을 권장하며, 5단계를 추천합니다",
+          "skip-degree": "쿼리 과정에서 건너뛸 정점의 최소 엣지 수를 기입하세요. 즉, 정점의 엣지 수가 슈퍼 버텍스 차수보다 클 때, 해당 정점을 건너뛰어 슈퍼 버텍스를 피할 수 있습니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요"
+        }
+      },
+      "shortest-path": {
+        "options": {
+          "source": "출발점 ID:",
+          "target": "도착점 ID:",
+          "direction": "방향:",
+          "max_depth": "최대 단계 수:",
+          "maxDepth": "최대 단계 수:",
+          "label": "엣지 유형:",
+          "max_degree": "최대 차수:",
+          "maxDegree": "최대 차수:",
+          "skip_degree": "슈퍼 버텍스 차수:",
+          "skipDegree": "슈퍼 버텍스 차수:",
+          "capacity": "접근 가능 정점 최대값:"
+        },
+        "pre-value": "모두",
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-target-id": "도착점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "no-edge-types": "엣지 유형 없음"
+        },
+        "hint": {
+          "max-depth": "성능을 보장하기 위해 10단계를 넘지 않는 것을 권장하며, 5단계를 추천합니다",
+          "skip-degree": "쿼리 과정에서 건너뛸 정점의 최소 엣지 수를 기입하세요. 즉, 정점의 엣지 수가 슈퍼 버텍스 차수보다 클 때, 해당 정점을 건너뛰어 슈퍼 버텍스를 피할 수 있습니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요"
+        }
+      },
+      "shortest-path-all": {
+        "options": {
+          "source": "출발점 ID:",
+          "target": "도착점 ID:",
+          "direction": "방향:",
+          "max_depth": "최대 단계 수:",
+          "label": "엣지 유형:",
+          "max_degree": "최대 차수:",
+          "capacity": "접근 가능 정점 최대값:",
+          "skip_degree": "슈퍼 버텍스 차수:"
+        },
+        "pre-value": "모두",
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-target-id": "도착점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "no-edge-types": "엣지 유형 없음"
+        },
+        "hint": {
+          "max-depth": "성능을 보장하기 위해 10단계를 넘지 않는 것을 권장하며, 5단계를 추천합니다",
+          "skip-degree": "쿼리 과정에서 건너뛸 정점의 최소 엣지 수를 기입하세요. 즉, 정점의 엣지 수가 슈퍼 버텍스 차수보다 클 때, 해당 정점을 건너뛰어 슈퍼 버텍스를 피할 수 있습니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요"
+        }
+      },
+      "all-path": {
+        "options": {
+          "source": "출발점 ID:",
+          "target": "도착점 ID:",
+          "direction": "방향:",
+          "max_depth": "최대 단계 수:",
+          "label": "엣지 유형:",
+          "max_degree": "최대 차수:",
+          "capacity": "접근 가능 정점 최대값:",
+          "limit": "반환 경로 최대값:"
+        },
+        "pre-value": "모두",
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-target-id": "도착점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "no-edge-types": "엣지 유형 없음"
+        },
+        "hint": {
+          "max-depth": "성능을 보장하기 위해 10단계를 넘지 않는 것을 권장하며, 5단계를 추천합니다",
+          "skip-degree": "쿼리 과정에서 건너뛸 정점의 최소 엣지 수를 기입하세요. 즉, 정점의 엣지 수가 슈퍼 버텍스 차수보다 클 때, 해당 정점을 건너뛰어 슈퍼 버텍스를 피할 수 있습니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요"
+        }
+      },
+      "model-similarity": {
+        "options": {
+          "method": "출발점 선택 방식:",
+          "source": "출발점 ID:",
+          "vertex-type": "정점 유형",
+          "vertex-property": "정점 속성",
+          "direction": "방향:",
+          "least_neighbor": "최소 이웃 수:",
+          "similarity": "유사도:",
+          "label": "엣지 유형:",
+          "max_similar": "최대 유사도 개수:",
+          "least_similar": "최소 유사 정점 수:",
+          "property_filter": "속성 필터:",
+          "least_property_number": "최소 속성값 개수:",
+          "max_degree": "최대 차수:",
+          "capacity": "접근 가능 정점 최대값:",
+          "skip_degree": "최대 반환 정점 수:",
+          "limit": "최대 결과 반환값:",
+          "return_common_connection": "공통 연결점 반환:",
+          "return_complete_info": "정점 전체 정보 반환:"
+        },
+        "radio-value": {
+          "specific-id": "지정 ID",
+          "filtered-type-property": "필터링된 유형 속성"
+        },
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-vertex-type": "정점 유형을 선택하세요",
+          "input-vertex-property": "정점 속성을 선택하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "input-integer-gt-1": "1보다 큰 정수를 입력하세요",
+          "input-filtered-property": "필터링할 속성을 선택하세요",
+          "no-properties": "속성 없음",
+          "no-vertex-type": "정점 유형 없음"
+        },
+        "hint": {
+          "least_property_number": "속성 필터와 최소 속성값 개수를 함께 사용해야 합니다. 설정 후 효과: 출발점과 모든 유사 정점 사이의 특정 속성값이 최소 속성값 개수 이상일 때만 해당 출발점과 유사 정점을 반환합니다",
+          "least_neighbor": "이웃 수가 현재 설정값보다 적으면, 출발점에 유사 정점이 없는 것으로 간주합니다",
+          "similarity": "출발점과 '유사 정점'의 공통 이웃 수가 출발점의 전체 이웃 수에 차지하는 비율",
+          "max_similar": "유사도가 가장 높은 상위 N개의 출발점 유사 정점을 반환합니다. 0은 모두를 의미합니다",
+          "return_common_connection": "출발점과 '유사 정점'이 공통으로 연결된 중간점을 반환할지 여부"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "no-edge-typs": "엣지 유형 없음",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "positive-integer-only": "0보다 큰 정수만 입력하세요",
+          "integer-gt-1": "1보다 큰 정수만 입력하세요"
+        },
+        "pre-value": "모두"
+      },
+      "neighbor-rank": {
+        "options": {
+          "source": "출발점 ID:",
+          "alpha": "Alpha",
+          "direction": "방향:",
+          "capacity": "접근 가능 정점 최대값:",
+          "label": "엣지 유형:",
+          "degree": "최대 차수:",
+          "top": "각 레벨별로 유지할 최고 가중치 Top N:"
+        },
+        "placeholder": {
+          "input-source-id": "출발점 ID를 입력하세요",
+          "input-integer": "0 이상의 정수를 입력하세요",
+          "input-positive-integer": "0보다 큰 정수를 입력하세요",
+          "range": "범위(0-1]"
+        },
+        "hint": {
+          "top": "결과에서 각 레벨별로 가중치가 가장 높은 N개의 결과만 유지합니다"
+        },
+        "validations": {
+          "no-empty": "이 항목은 비워둘 수 없습니다",
+          "no-edge-typs": "엣지 유형 없음",
+          "range": "0보다 크고 1 이하의 수치를 입력하세요",
+          "integer-only": "0 이상의 정수만 입력하세요",
+          "postive-integer-only": "0보다 큰 정수만 입력하세요",
+          "input-chars": "규칙은 다른 규칙과 중복될 수 없습니다"
+        },
+        "pre-value": "모두",
+        "add-new-rule": "새 규칙 추가"
+      }
+    },
+    "exec-logs": {
+      "table-title": {
+        "time": "시간",
+        "type": "실행 유형",
+        "content": "실행 내용",
+        "status": "상태",
+        "duration": "소요 시간",
+        "manipulation": "조작"
+      },
+      "type": {
+        "GREMLIN": "GREMLIN 조회",
+        "GREMLIN_ASYNC": "GREMLIN 작업",
+        "ALGORITHM": "알고리즘 조회"
+      },
+      "status": {
+        "success": "성공",
+        "async-success": "제출 성공",
+        "running": "실행 중",
+        "failed": "실패",
+        "async-failed": "제출 실패"
+      }
+    }
+  }
+}

@@ -17,5 +17,6 @@
 
 import zhCNResources from './zh-CN';
 import enUSResources from './en-US';
+import koKRResources from './ko-KR';
 
-export { zhCNResources, enUSResources };
+export { zhCNResources, enUSResources, koKRResources };

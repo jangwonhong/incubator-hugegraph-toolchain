@@ -1,0 +1,65 @@
+{
+  "async-tasks": {
+    "title": "작업 관리",
+    "placeholders": {
+      "search": "작업 ID 또는 이름으로 검색하세요"
+    },
+    "table-column-title": {
+      "task-id": "작업 ID",
+      "task-name": "작업 이름",
+      "task-type": "작업 유형",
+      "create-time": "생성 시간",
+      "time-consuming": "소요 시간",
+      "status": "상태",
+      "manipulation": "조작"
+    },
+    "table-filters": {
+      "task-type": {
+        "all": "전체",
+        "gremlin": "Gremlin 작업",
+        "algorithm": "알고리즘 작업",
+        "remove-schema": "스키마 삭제",
+        "create-index": "인덱스 생성",
+        "rebuild-index": "인덱스 재구성"
+      },
+      "status": {
+        "all": "전체",
+        "scheduling": "스케줄링 중",
+        "scheduled": "대기 중",
+        "queued": "대기 중",
+        "running": "실행 중",
+        "restoring": "복원 중",
+        "success": "성공",
+        "failed": "실패",
+        "cancelling": "취소 중",
+        "cancelled": "취소됨"
+      }
+    },
+    "table-selection": {
+      "selected": "선택된 항목 {{number}}개",
+      "delete-batch": "일괄 삭제"
+    },
+    "manipulations": {
+      "abort": "중단",
+      "aborting": "중단 중",
+      "delete": "삭제",
+      "check-result": "결과 확인",
+      "check-reason": "원인 확인"
+    },
+    "hint": {
+      "delete-confirm": "삭제 확인",
+      "delete-description": "이 작업을 삭제하시겠습니까? 삭제 후 복구할 수 없습니다. 신중히 조작해주세요",
+      "delete-succeed": "삭제 성공",
+      "delete-batch-confirm": "일괄 삭제 확인",
+      "delete-batch-description": "다음 작업을 삭제하시겠습니까? 삭제 후 복구할 수 없습니다. 신중히 조작해주세요",
+      "delete": "삭제",
+      "cancel": "취소",
+      "no-data": "데이터가 없습니다",
+      "empty": "현재 작업이 없습니다",
+      "select-disabled": "작업 {{id}}는 선택하여 삭제할 수 없습니다",
+      "check-details": "세부 정보 확인",
+      "creation-failed": "생성 실패"
+    }
+  }
+}
+

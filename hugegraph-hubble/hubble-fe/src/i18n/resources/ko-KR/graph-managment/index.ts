@@ -15,24 +15,18 @@
  * under the License.
  */
 
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import CommonResources from './common.json';
+import GraphManagementSideBarResources from './GraphManagementSidebar.json';
+import DataAnalyzeResources from './dataAnalyze.json';
+import DataImportResources from './data-import/import-tasks/ImportTasks.json';
+import AsyncTasksResources from './AsyncTasks.json';
+import Addition from './addition.json';
 
-import { zhCNResources, enUSResources, koKRResources } from './resources';
-
-i18n.use(initReactI18next).init({
-  lng: localStorage.getItem('languageType') || 'zh-CN',
-  fallbackLng: 'zh-CN',
-
-  resources: {
-    'zh-CN': zhCNResources,
-    'en-US': enUSResources,
-    'ko-KR': koKRResources
-  },
-
-  interpolation: {
-    escapeValue: false // not needed for react as it escapes by default
-  }
-});
-
-export default i18n;
+export {
+  CommonResources,
+  DataAnalyzeResources,
+  GraphManagementSideBarResources,
+  DataImportResources,
+  AsyncTasksResources,
+  Addition
+};

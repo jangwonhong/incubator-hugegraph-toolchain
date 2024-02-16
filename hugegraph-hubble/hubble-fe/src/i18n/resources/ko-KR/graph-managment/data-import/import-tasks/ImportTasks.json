@@ -1,0 +1,342 @@
+{
+  "breadcrumb": {
+    "first": "가져오기 작업",
+    "second": "작업 세부 정보"
+  },
+  "import-manager": {
+    "hint": {
+      "empty-task": "현재 아무런 작업도 없습니다. 지금 생성하세요",
+      "no-result": "결과 없음",
+      "creation-succeed": "생성 성공",
+      "update-succeed": "편집 성공"
+    },
+    "manipulation": {
+      "create": "생성"
+    },
+    "placeholder": {
+      "input-job-name": "작업 이름을 입력하여 검색하세요",
+      "input-valid-job-name": "중문, 영문, 숫자, 밑줄이 허용됩니다",
+      "input-job-description": "작업 메모를 입력하세요"
+    },
+    "list-column-title": {
+      "job-name": "작업 이름",
+      "size": "크기",
+      "create-time": "생성 시간",
+      "status": "상태",
+      "time-consuming": "작업 소요 시간",
+      "manipulation": "조작"
+    },
+    "list-column-status": {
+      "DEFAULT": "시작하지 않음",
+      "UPLOADING": "시작하지 않음",
+      "MAPPING": "설정 중",
+      "SETTING": "가져오기 중",
+      "LOADING": "가져오기 중",
+      "FAILED": "실패",
+      "SUCCESS": "성공"
+    },
+    "list-column-manipulations": {
+      "start": "작업 시작",
+      "resume-setting": "설정 계속하기",
+      "resume-importing": "가져오기 계속하기",
+      "check-error-log": "원인 보기",
+      "delete": "삭제"
+    },
+    "modal": {
+      "create-job": {
+        "title": "가져오기 작업 생성",
+        "job-name": "작업 이름:",
+        "job-description": "작업 메모:"
+      },
+      "delete-job": {
+        "title": "작업 삭제",
+        "hint": "작업{{name}}을 삭제하시겠습니까?",
+        "sub-hint": "삭제 후 이 작업은 복구할 수 없습니다"
+      },
+      "manipulations": {
+        "create": "생성",
+        "delete": "삭제",
+        "cancel": "취소"
+      }
+    },
+    "validator": {
+      "no-empty": "이 항목은 필수입니다",
+      "over-limit-size": "문자 수 제한을 초과했습니다",
+      "invalid-format": "중문, 영문, 숫자, 밑줄을 입력하세요"
+    }
+  },
+  "import-job-details": {
+    "tabs": {
+      "basic-settings": "기본 설정",
+      "uploaded-files": "업로드된 파일",
+      "data-maps": "매핑 파일",
+      "import-details": "가져오기 세부 정보"
+    },
+    "basic": {
+      "job-name": "작업 이름:",
+      "job-description": "작업 메모:",
+      "modal": {
+        "edit-job": {
+          "title": "가져오기 작업 편집",
+          "job-name": "작업 이름:",
+          "job-description": "작업 메모:"
+        },
+        "manipulations": {
+          "save": "저장",
+          "cancel": "취소"
+        }
+      }
+    },
+    "manipulations": {
+      "edit": "편집",
+      "resume-task": "작업 계속하기"
+    }
+  },
+  "step": {
+    "first": "파일 업로드",
+    "second": "데이터 매핑 설정",
+    "third": "데이터 가져오기",
+    "fourth": "완료"
+  },
+  "upload-files": {
+    "click": "클릭",
+    "description": "클릭하거나 파일을 이곳으로 드래그하여 업로드하세요. 여러 개의 csv 파일을 동시에 업로드할 수 있으며, 단일 파일은 1GB 이내, 한 번에 총 10GB 이내입니다",
+    "drag": "드래그",
+    "description-1": "또는 파일을",
+    "description-2": "이곳으로 드래그하여 업로드하세요. 여러 개의 csv 파일을 동시에 업로드할 수 있으며, 단일 파일은 1GB 이내, 한 번에 총 10GB 이내입니다",
+    "cancel": "업로드 취소",
+    "next": "다음",
+    "wrong-format": "csv 형식 파일만 지원합니다",
+    "over-single-size-limit": "용량이 1GB를 초과했습니다",
+    "over-all-size-limit": "총 용량이 10GB를 초과했습니다",
+    "empty-file": "파일이 비어 있습니다. 다시 업로드하세요",
+    "no-duplicate": "다음 업로드된 파일들이 이미 존재합니다:"
+  },
+  "data-configs": {
+    "file": {
+      "title": "파일 설정",
+      "include-header": "헤더 포함",
+      "delimiter": {
+        "title": "구분자",
+        "comma": "콤마",
+        "semicolon": "세미콜론",
+        "tab": "탭",
+        "space": "공백",
+        "custom": "사용자 정의"
+      },
+      "code-type": {
+        "title": "인코딩 형식",
+        "UTF-8": "UTF-8",
+        "GBK": "GBK",
+        "ISO-8859-1": "ISO-8859-1",
+        "US-ASCII": "US-ASCII",
+        "custom": "사용자 정의"
+      },
+      "date-type": {
+        "title": "날짜 형식",
+        "custom": "사용자 정의"
+      },
+      "skipped-line": "건너뛸 행",
+      "timezone": "시간대",
+      "save": "저장",
+      "placeholder": {
+        "input-delimiter": "구분자를 입력하세요",
+        "input-charset": "인코딩 형식을 입력하세요",
+        "input-date-format": "날짜 형식을 입력하세요"
+      },
+      "hint": {
+        "save-succeed": "파일 설정이 저장되었습니다"
+      }
+    },
+    "type": {
+      "title": "타입 설정",
+      "basic-settings": "기본 설정",
+      "manipulation": {
+        "create": "생성",
+        "save": "저장",
+        "cancel": "취소",
+        "create-vertex": "정점 매핑 생성",
+        "create-edge": "엣지 매핑 생성"
+      },
+      "info": {
+        "type": "타입",
+        "name": "이름",
+        "ID-strategy": "ID 전략",
+        "edit": "편집",
+        "delete": "삭제"
+      },
+      "ID-strategy": {
+        "PRIMARY_KEY": "기본 키 ID",
+        "AUTOMATIC": "자동 생성",
+        "CUSTOMIZE_STRING": "사용자 정의 문자열",
+        "CUSTOMIZE_NUMBER": "사용자 정의 숫자",
+        "CUSTOMIZE_UUID": "사용자 정의 UUID"
+      },
+      "vertex": {
+        "title": "정점 매핑 생성",
+        "type": "정점 타입",
+        "ID-strategy": "ID 전략",
+        "ID-column": "ID 열",
+        "map-settings": "매핑 설정",
+        "add-map": {
+          "title": "매핑 추가",
+          "name": "열 이름",
+          "sample": "데이터 예시",
+          "property": "매핑 속성",
+          "clear": "지우기"
+        },
+        "select-all": "전체 선택",
+        "advance": {
+          "title": "고급 설정",
+          "nullable-list": {
+            "title": "널 값 목록",
+            "empty": "빈 값",
+            "custom": "사용자 정의"
+          },
+          "map-property-value": {
+            "title": "속성 값 매핑",
+            "add-value": "속성 값 매핑 추가",
+            "fields": {
+              "property": "속성",
+              "value-map": "값 매핑",
+              "add-value-map": "값 매핑 추가"
+            }
+          },
+          "placeholder": {
+            "input": "선택하세요",
+            "input-property": "입력 속성을 선택하세요",
+            "input-file-value": "파일 값을 입력하세요",
+            "input-graph-value": "그래프 가져오기 값을 입력하세요"
+          }
+        }
+      },
+      "edge": {
+        "title": "엣지 매핑 생성",
+        "type": "엣지 타입",
+        "source-ID-strategy": "출발점 ID 전략",
+        "target-ID-strategy": "도착점 ID 전략",
+        "ID-column": "ID 열",
+        "map-settings": "매핑 설정",
+        "add-map": {
+          "title": "매핑 추가",
+          "name": "열 이름",
+          "sample": "데이터 예시",
+          "property": "매핑 속성",
+          "clear": "지우기"
+        },
+        "select-all": "전체 선택",
+        "advance": {
+          "title": "고급 설정",
+          "nullable-list": {
+            "title": "널 값 목록",
+            "empty": "빈 값",
+            "custom": "사용자 정의"
+          },
+          "map-property-value": {
+            "title": "속성 값 매핑",
+            "add-value": "속성 값 매핑 추가",
+            "fields": {
+              "property": "속성",
+              "value-map": "값 매핑",
+              "add-value-map": "값 매핑 추가"
+            }
+          },
+          "placeholder": {
+            "input": "매핑 속성을 선택하세요",
+            "input-property": "입력 속성을 선택하세요",
+            "input-file-value": "파일 값을 입력하세요",
+            "input-graph-value": "그래프 가져오기 값을 입력하세요"
+          }
+        }
+      },
+      "hint": {
+        "lack-support-for-automatic": "자동 생성된 ID 전략은 시각화 가져오기를 지원하지 않습니다. API를 호출하여 구현하세요",
+        "no-vertex-or-edge-mapping": "다음 파일에는 정점 타입 또는 엣지 타입 매핑이 설정되지 않았습니다:"
+      },
+      "placeholder": {
+        "select-vertex-type": "정점 타입을 선택하세요",
+        "select-edge-type": "엣지 타입을 선택하세요",
+        "select-id-column": "ID 열을 선택하세요"
+      }
+    },
+    "manipulations": {
+      "previous": "이전",
+      "next": "다음",
+      "add": "추가",
+      "edit": "편집",
+      "delete": "삭제",
+      "cancel": "취소",
+      "hints": {
+        "delete-confirm": "삭제하시겠습니까?",
+        "warning": "삭제 후 복구할 수 없습니다. 주의해서 조작하세요"
+      }
+    },
+    "validator": {
+      "no-empty": "이 항목은 비워둘 수 없습니다"
+    }
+  },
+  "server-data-import": {
+    "import-settings": {
+      "title": "가져오기 설정",
+      "checkIfExist": "엣지 연결 정점 존재 여부 확인",
+      "requestTimesWhenInterpolationFailed": "삽입 실패 시 재시도 횟수",
+      "maximumAnalyzedErrorRow": "허용되는 최대 분석 오류 행 수",
+      "requestTicksWhenInterpolationFailed": "삽입 실패 시 재시도 간격/s",
+      "maxiumInterpolateErrorRow": "허용되는 최대 삽입 오류 행 수",
+      "InterpolationTimeout": "삽입 시간 초과/s"
+    },
+    "import-details": {
+      "title": "가져오기 세부 정보",
+      "column-titles": {
+        "file-name": "파일 이름",
+        "type": "타입",
+        "import-speed": "가져오기 속도",
+        "import-progress": "가져오기 진행 상황",
+        "status": "상태",
+        "time-consumed": "소요 시간",
+        "manipulations": "조작"
+      },
+      "content": {
+        "vertex": "정점",
+        "edge": "엣지"
+      },
+      "status": {
+        "RUNNING": "실행 중",
+        "SUCCEED": "성공",
+        "FAILED": "실패",
+        "PAUSED": "일시 중지됨",
+        "STOPPED": "중지됨"
+      },
+      "manipulations": {
+        "pause": "일시 중지",
+        "resume": "계속",
+        "retry": "재시도",
+        "abort": "중단",
+        "failed-cause": "원인 보기"
+      }
+    },
+    "hint": {
+      "check-vertex": "확인을 활성화하면 가져오기 성능에 영향을 줄 수 있습니다. 필요에 따라 활성화하세요",
+      "no-data": "가져오기 요청 중",
+      "confirm-navigation": "작업 목록으로 이동하시겠습니까? 업로드 중인 파일이 손실될 수 있습니다"
+    },
+    "validator": {
+      "no-empty": "이 항목은 비워둘 수 없습니다",
+      "need-integer-with-negative": "-1이거나 0보다 큰 정수를 입력하세요",
+      "need-integer": "0보다 큰 정수를 입력하세요"
+    },
+    "manipulations": {
+      "previous": "이전",
+      "start": "가져오기 시작",
+      "cancel": "가져오기 취소",
+      "finished": "완료"
+    }
+  },
+  "data-import-status": {
+    "finished": "가져오기 완료",
+    "success": "{{number}}개 파일 성공적으로 가져왔습니다",
+    "pause": "{{number}}개 파일 일시 중지됨",
+    "abort": "{{number}}개 파일 중단됨",
+    "move-to-import-manager": "가져오기 작업 목록으로 돌아가기"
+  }
+}

@@ -15,24 +15,25 @@
  * under the License.
  */
 
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import { merge } from 'lodash-es';
+import {
+  CommonResources,
+  DataAnalyzeResources,
+  GraphManagementSideBarResources,
+  DataImportResources,
+  AsyncTasksResources,
+  Addition
+} from './graph-managment';
 
-import { zhCNResources, enUSResources, koKRResources } from './resources';
+const translation = {
+  translation: merge(
+    CommonResources,
+    DataAnalyzeResources,
+    GraphManagementSideBarResources,
+    DataImportResources,
+    AsyncTasksResources,
+    Addition
+  )
+};
 
-i18n.use(initReactI18next).init({
-  lng: localStorage.getItem('languageType') || 'zh-CN',
-  fallbackLng: 'zh-CN',
-
-  resources: {
-    'zh-CN': zhCNResources,
-    'en-US': enUSResources,
-    'ko-KR': koKRResources
-  },
-
-  interpolation: {
-    escapeValue: false // not needed for react as it escapes by default
-  }
-});
-
-export default i18n;
+export default translation;
